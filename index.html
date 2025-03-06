@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    nav{
+      border-bottom:1px solid black;
+    }
+    .crumbs ol{
+      list-style-type:none; /* 불릿 없애기 */
+      padding-left:10;
+    }
+    .crumb{
+      display:inline-block; /* 한 줄로 배치하기 */
+    }
+    .crumb a::after{
+      display:inline-block;
+      color:#000;
+      content:">";
+      font-size:80%;
+      font-weight:bold;
+      padding:0 3px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="crumbs">
+    <ol>
+      <li class="crumb"><a href="#">Bikes</a></li>
+      <li class="crumb"><a href="#">BMX</a></li>
+      <li class="crumb"><a href="#">Jump Bike 3000</a></li>
+    </ol>
+  </nav>
+</body>
+</html>
